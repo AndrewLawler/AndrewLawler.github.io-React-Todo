@@ -1,25 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Todos from './components/Todos';
 import './App.css';
 
 class App extends Component {
+  // State for todos
+  state = {
+    todos: [
+      {
+        id: 1,
+        title: 'Take out the rubbish',
+        completed: false
+      },
+      {
+        id: 2,
+        title: 'Do the washing',
+        completed: false
+      },
+      {
+        id: 3,
+        title: 'Do current homework',
+        completed: false
+      }
+    ]
+  }
+  // full render
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Todos todos={this.state.todos}/>
       </div>
     );
   }
