@@ -3,28 +3,15 @@ import Todos from './components/Todos';
 import './App.css';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
+import uuid from 'uuid';
 
 class App extends Component {
   // State for todos
   state = {
-    todos: [
-      {
-        id: 1,
-        title: 'Take out the rubbish',
-        completed: false
-      },
-      {
-        id: 2,
-        title: 'Do the washing',
-        completed: false
-      },
-      {
-        id: 3,
-        title: 'Do current homework',
-        completed: false
-      }
-    ]
+    todos: []
   }
+
+  // Mark the todo as complete 
 
   markComplete = (id) => {
     this.setState({ todos: this.state.todos.map(todo => {
@@ -35,16 +22,21 @@ class App extends Component {
     }) });
   }
 
-  getStyles = () => {
-    return {
-      color: 'blue',
-      padding: '10px',
-    }
-  } 
-
+  // Delete Todo
   delTodo = (id) => {
     this.setState({ todos: [...this.state.todos.filter(todo => todo.id
     !== id)] });
+  }
+
+  // Add Todo
+  addTodo = (title) => {
+    const newTodo = {
+      id: uuid.v4(),
+      title,
+      completed: false
+    }
+
+    this.setState({todos: [...this.state.todos, newTodo]})
   }
 
   // full render
@@ -52,9 +44,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-          <Header />
-          <AddTodo />
-          <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>
+          <div className="type">
+            <Header />
+            <AddTodo addTodo={this.addTodo}/>
+            <Todos style={{paddingTop: '5px'}} todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>
+          </div>  
         </div>
       </div>
     );

@@ -7,7 +7,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
-  text-align: center;
 }
 
 a {
@@ -16,7 +15,12 @@ a {
 }
 
 .container {
-  padding: 0 1rem;
+  text-align: center;
+}
+
+.type {
+  width: 700px;
+  display: inline-block;
 }
 
 .btn {
