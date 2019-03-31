@@ -4,7 +4,7 @@ I made changes when it comes to the css because the overall application from the
 ## How to run
 To run the files simply open terminal and run 'npm start'
 
-<img src="TodoList Example.png" width="600" height="400" style="padding: 10px; text-align: center">
+<img src="TodoList Example.png" width="700" height="400" style="padding: 10px; text-align: center">
 
-<img src="Todo.png" width="600" height="400" style="padding: 10px; text-align: center">
+<img src="Todo.png" width="700" height="400" style="padding: 10px; text-align: center">
 
