@@ -3,3 +3,8 @@ I created this application using a React course i found online. This course help
 I made changes when it comes to the css because the overall application from the course looked a bit boring.
 ## How to run
 To run the files simply open terminal and run 'npm start'
+
+<img src="TodoList Example.png" width="400" height="400" style="padding: 10px">
+
+<img src="Todo.png" width="400" height="400" style="padding: 10px">
+
