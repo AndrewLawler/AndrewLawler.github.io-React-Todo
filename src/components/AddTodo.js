@@ -20,7 +20,7 @@ export class AddTodo extends Component {
         <input 
             type="text" 
             name="title" 
-            style={{ flex: '10', padding: '5px', border: '1px solid #4040bf'}}
+            style={{ flex: '10', padding: '5px', border: '1px solid #967E18'}}
             placeholder="Add Todo ..."
             value={this.state.title}
             onChange={this.onChange}
@@ -29,7 +29,7 @@ export class AddTodo extends Component {
             type="submit"
             value="Submit"
             className="btn"
-            style={{flex: '1', background: 'white', color: '#4040bf', border: '1px solid #4040bf'}}
+            style={{flex: '1', background: 'white', color: 'black', border: '1px solid #967E18'}}
         />
       </form>
     )

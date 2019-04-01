@@ -13,13 +13,8 @@ class App extends Component {
     todos: [
       {
         id: uuid.v4(),
-        title: 'Welcome to Todo',
+        title: 'Welcome to Todo App v1.0.1',
         completed: false
-      },
-      {
-        id: uuid.v4(),
-        title: 'Add some more Todos',
-        completed: false 
       }
     ]
   }
