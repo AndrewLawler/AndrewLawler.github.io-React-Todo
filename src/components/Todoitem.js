@@ -20,7 +20,7 @@ export class Todoitem extends Component {
       background: '#fff',
       color: 'black',
       border: '1px solid #967E18',
-      width: '89px',
+      width: '81px',
       height: '22px',
       float: 'right',
       textAlign: 'center',
